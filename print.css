@@ -1,0 +1,83 @@
+/* Print styles for formula sheets */
+
+@media print {
+  .sidebar,
+  .topbar,
+  .back-to-top,
+  .toast,
+  .sidebar-overlay,
+  .formula-actions,
+  .filter-bar,
+  .chapter-header-actions .checkbox-label,
+  .page-actions,
+  .menu-btn,
+  .search-wrap,
+  .theme-toggle {
+    display: none !important;
+  }
+
+  .main-wrapper {
+    margin-left: 0 !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt;
+  }
+
+  .content {
+    padding: 0 !important;
+    max-width: none !important;
+  }
+
+  .card,
+  .formula-card {
+    break-inside: avoid;
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+    margin-bottom: 0.75rem;
+    page-break-inside: avoid;
+  }
+
+  .formula-card.important {
+    border-left: 3px solid #f59e0b !important;
+  }
+
+  .formula-latex {
+    background: #f5f5f5 !important;
+  }
+
+  .page-title {
+    font-size: 18pt;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-title,
+  .revision-group-title {
+    font-size: 13pt;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.25rem;
+    margin-top: 1rem;
+  }
+
+  .revision-item {
+    font-size: 10pt;
+    padding: 0.25rem 0;
+  }
+
+  a { text-decoration: none; color: black; }
+
+  .print-header {
+    display: block !important;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #333;
+  }
+
+  .print-header h1 { font-size: 20pt; margin-bottom: 0.25rem; }
+  .print-header p { font-size: 10pt; color: #555; }
+}
+
+.print-header { display: none; }
